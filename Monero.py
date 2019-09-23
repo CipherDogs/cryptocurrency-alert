@@ -11,6 +11,8 @@ if crypto_wallet != '':
     while True:
       print(crypto_wallet,'=',price,wallet)
       print("change = ",change)
+      if change <= '0':
+        print('Not profitable to mine')
       time.sleep(120)
   else :
     print('error')
